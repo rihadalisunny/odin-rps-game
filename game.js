@@ -1,9 +1,11 @@
 function getComputerChoice() {
+  // This function will return a computer's choice based on the random number generated
   let choices = ['rock', 'paper', 'scissors'];
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
 function playRound(playerSelection, computerSelection) {
+  // This function will play a single round of rock paper scissors
   if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
     return "It's a tie!";
   } else if (playerSelection.toLowerCase() === 'rock') {
@@ -28,6 +30,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
+  // This function will loop and run the game for 5 rounds
   let playerScore = 0;
   let computerScore = 0;
   for (let i = 0; i < 5; i++) {
