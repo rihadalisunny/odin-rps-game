@@ -36,7 +36,7 @@ function game() {
     console.log(playRound(playerSelection, computerSelection));
     if (
       playRound(playerSelection, computerSelection) ===
-      'You Win! rock beats scissors'
+      'You Win! ROCK beats SCISSORS'
     ) {
       playerScore++;
     } else if (
